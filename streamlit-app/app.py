@@ -18,7 +18,7 @@ def extract(pokemon_name):
 def transform(data):
      
         abilities = [a['ability']['name'] for a in data.get('abilities', [])]      
-        picture = data['sprites']['front_default']
+        picture = data['sprites']['other']['official-artwork']['front_default']
         cries = data['cries']['latest']
 
         required_data = {
